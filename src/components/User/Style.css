@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+/* body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+} */
+#box{
+    border-radius: 15px;
+    box-shadow: 3px -3px 3px 3px #9b59b6;
+    background: linear-gradient(-135deg, #AFEEEE,#800080);
+ 
+}
+#box a{
+    text-decoration: none;
+    color:#000080;
+}
+#box a:hover{
+    color: #00FFFF;
+}
+.carousel-item .image{
+    width: 100%;
+}
