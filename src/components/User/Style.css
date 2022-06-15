@@ -5,10 +5,10 @@
     box-sizing: border-box;
     font-family: "poppins";
 }
-/* body{
+body{
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 
-} */
+}
 #box{
     border-radius: 15px;
     box-shadow: 3px -3px 3px 3px #9b59b6;
@@ -25,3 +25,4 @@
 .carousel-item .image{
     width: 100%;
 }
+

@@ -13,6 +13,7 @@ import Home from "./components/Home/home";
 import Signup from "./components/User/register";
 import Navbar from "./components/Navbar/nav";
 import Category from "./components/Category/category";
+import Product from "./components/Product/product";
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
         {/* <Navbar /> */}
         {/* <Link to="/navbar">Navbar</Link> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
       </Router>
       {/* <Signup /> */}

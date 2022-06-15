@@ -36,23 +36,18 @@ const Navbar = () => {
             </form>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link " href="/">
+                <a className="nav-link " href="/home">
                   Home
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/category">
-                  Shop
+                  Shop now
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   Trems
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -66,7 +61,7 @@ const Navbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/login">
+                    <a className="dropdown-item" href="/">
                       Login
                     </a>
                   </li>
@@ -77,7 +72,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="/logout">
-                      Logout
+                      logot
                     </a>
                   </li>
                 </ul>

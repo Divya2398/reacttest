@@ -1,35 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Style.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [status, setStatus] = useState("flase");
   const [UserName, savedUserName] = useState();
   const [password, savedpassword] = useState();
+
   const getdetails = async () => {
-    // let data = {
-    //   UserName,
-    //   password,
-    // };
-    // const result = axios.post(
-    //   "http://localhost:5000/v1/usermangement/user-login",
-    //   data
-    // );
-    //console.log(result);
-    axios
+    const get = await axios
       .post("http://localhost:5000/v1/usermangement/user-login", {
         UserName,
         password,
       })
       .then((Response) => {
-        console.log(Response);
-        alert("successfully loggedIn");
+        const setdata = Response.data.data.loginStatus;
+        console.log(setdata);
+        // alert("successfully loggedIn");
+        setStatus(setdata);
       })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  if (status === true) {
+    console.log("update", status);
+    navigate("/home");
+  }
+  //console.log("update", status);
+  // let data = {
+
   return (
     <div className="container my-5 ">
       <div
